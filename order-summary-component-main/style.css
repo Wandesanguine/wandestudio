@@ -1,0 +1,127 @@
+:root{
+     --Pale-blue: hsl(225, 100%, 94%);
+     --Bright-blue: hsl(245, 75%, 52%);
+     --Very-pale-blue: hsl(230, 28%, 83%);
+     --Desaturated-blue: hsl(224, 23%, 55%);
+     --Dark-blue: hsl(223, 47%, 23%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/*attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-weight: bolder;
+}
+.bg_image{
+    background: url('./images/pattern-background-mobile.svg')
+    no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.plan{
+    display: flex;
+}
+article{/*
+    background: var(--Pale-blue);*/
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+body{
+    font-family: 'red hat display','sans-serif';
+    background-color: var(--Pale-blue);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+p{
+    font-size: 16px;
+    color: var(--Desaturated-blue);
+    line-height: 1.6;
+}
+.btn{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.music{
+    margin: 20px auto ;
+    width: 80%;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnproceed{
+    background: var(--Bright-blue);
+    padding: 15px 100px;
+    color:#fff;
+    width: 90%}
+.btnproceed:hover, .btnchange:hover{
+    opacity: 0.9;
+}
+.btncancel{
+    background: transparent;
+    color: var(--Desaturated-blue);
+
+}
+.btncancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+h1{
+    color: var(--Dark-blue);
+    text-align: center;
+}
+.btnchange{
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    background: transparent;
+}
+.container{
+    background: #fff;
+    margin: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44% 0.15);
+}
+.container img{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.annual{
+    padding-top: 5px;
+}
+button{
+    font-family: inherit;
+}
+@media (min-width: 768px){
+    .bg_image{
+        background: url('./images/pattern-background-desktop.svg')no-repeat
+        center/cover;
+        height: 50vh;
+    }
+    .container{
+        margin-top:50px;
+    }
+}
